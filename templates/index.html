@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color:DodgerBlue">
+<div class="container">
+<div class="card mt-5 mb-5">
+    <img class="img-fluid" style="height:500px" src="static/img/car.png">
+  <h2 class="text-center mt-5">Place Required Information for your Car</h2>
+    <hr>
+    <hr>
+<form class="m-5" method="POST" action="getinfo">
+  <div class="form-group">
+    <label >Model</label>
+    <input type="number" name="year" class="form-control" required placeholder="Enter model of Car eg. 2019">
+      </div>
+
+  <div class="form-group">
+    <label >Purchasing Price</label>
+    <input type="number" step="any" id="price" name="price" required class="form-control" placeholder="Enter price in lacs eg. 9.68">
+      </div>
+
+  <div class="form-group">
+    <label >Kilometers </label>
+    <input type="number" name="kms" class="form-control" required placeholder="Kilometers Car has travelled eg 20000">
+      </div>
+
+
+
+  <div class="form-group ">
+      <label >Fuel Type</label>
+      <select name="fuel" class="form-control">
+        <option>Petrol</option>
+        <option>Diesel</option>
+        <option>CNG</option>
+
+      </select>
+    </div>
+
+
+
+
+
+
+  <div class="form-group ">
+      <label >Seller Type</label>
+      <select name="seller" class="form-control">
+        <option>Dealer</option>
+        <option>Individual</option>
+
+      </select>
+    </div>
+
+
+  <div class="form-group ">
+      <label >Transmission</label>
+      <select name="transmission" class="form-control">
+        <option>Manual</option>
+        <option>Automatic</option>
+
+      </select>
+    </div>
+
+
+  <div class="form-group ">
+      <label >Owner</label>
+      <select name="owner" class="form-control">
+        <option>Single Owner</option>
+        <option>Dual Owner</option>
+        <option>More Owners</option>
+
+      </select>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <input type="submit" value="Submit" class="btn btn-primary col-md-12"/>
+</form>
+
+</div>
+</div>
+</body>
+</html>
+
